@@ -1,0 +1,107 @@
+.text-ellipsis {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.main {
+  max-width: 128rem;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.home_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home_container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.imgCover {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 1rem;
+}
+
+.cardContainer {
+  position: relative;
+  max-width: 25rem;
+  width: 100%;
+  height: 25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.cardContainer span {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Page Not Found  Style */
+
+.errorPage_container {
+  max-width: 90rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.errorPage_section {
+  width: 100%;
+}
+
+.errorPage_Img-container {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.errorPage_Img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.errorPage_text-Container {
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.errorPage_text-Container h3 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.errorPage_container .backHomeBtn {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.2rem;
+}

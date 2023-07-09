@@ -20,7 +20,7 @@ const DestinationPage = () => {
 
   const navigate = useNavigate();
   const cardHandler = (id, name) => {
-    navigate(`/dest/${destinationsList.id}`);
+    navigate(`/dest/${id}`);
     dispatch({ type: "destKey", payload: name });
   };
 

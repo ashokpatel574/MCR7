@@ -1,11 +1,10 @@
 import React from "react";
-import { useParams } from "react-router";
+
 import { useData } from "../context/DataContext";
 
 import { useNavigate } from "react-router";
 
 const DestinationPage = () => {
-  const { continentId } = useParams();
   const {
     state: { continents, countryKey, continentKey },
     dispatch,
@@ -20,7 +19,6 @@ const DestinationPage = () => {
   const destinationsList = countrydata.destinations;
 
   const navigate = useNavigate();
-
   const cardHandler = (id, name) => {
     navigate(`/dest/${destinationsList.id}`);
     dispatch({ type: "destKey", payload: name });

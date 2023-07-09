@@ -17,6 +17,35 @@ const DestinationDetails = () => {
     <div className="home_container">
       <h2>Welcome to Trip Advisor</h2>
       <h3>Top Continents for your next holiday</h3>
+
+      <div>
+        <h3>{destdata.name}</h3>
+
+        <div style={{ display: "flex", gap: "1.5rem" }}>
+          <div>
+            <img
+              src={destdata.image}
+              alt={destId.name}
+              height={"200px"}
+              width={"200px"}
+            />
+          </div>
+          <div>
+            <p>
+              description: <span>{destdata.description}</span>
+            </p>
+            <p>
+              ratings: <span>{destdata.ratings}</span>
+            </p>
+            <p>
+              reviews: <span>{destdata.reviews}</span>
+            </p>
+            <p>
+              location: <span>{destdata.location}</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
